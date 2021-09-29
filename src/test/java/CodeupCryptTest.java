@@ -20,7 +20,6 @@ public class CodeupCryptTest {
         assertEquals("c4t", CodeupCrypt.hashPassword("cat"));
         assertEquals("c4t", CodeupCrypt.hashPassword("cAt"));
         assertEquals("c0d39p", CodeupCrypt.hashPassword("codeup"));
-
     }
     @Test
     public void testCheckPassword() {
