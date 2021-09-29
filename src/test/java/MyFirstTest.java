@@ -15,7 +15,7 @@ public class MyFirstTest {
     @Test
     public void isLanguages(){
         List<String> languages = new ArrayList<>();
-        List<String> moreLanguages = new ArrayList<>();
+        List<String> moreLanguages = languages;
         System.out.println("Checking languages");
         assertNotSame(languages, moreLanguages);
     }
@@ -33,8 +33,8 @@ public class MyFirstTest {
 //        Scanner sc = new Scanner(System.in);
 //        String language = sc.nextLine();
         String language = "PHP";
-        System.out.println(language.contains("H"));
         System.out.println(language.contains("J"));
+        System.out.println(language.contains("H"));
         assertFalse(language.contains("J"));
         assertTrue(language.contains("H"));
     }
